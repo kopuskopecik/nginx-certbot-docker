@@ -10,7 +10,6 @@ services:
       - devcomanda_nginx_ssl:/etc/nginx/ssl
       - devcomanda_certbot_certs:/etc/letsencrypt
       - test1_devcomanda_com_certbot:/var/www/certbot/erdogansahin.net
-      - test2_devcomanda_com_certbot:/var/www/certbot/erdogansahin.net
       - ./html:/var/www/html/erdogansahin.net
       - ./html:/var/www/html/erdogansahin.net
     ports:
@@ -26,7 +25,6 @@ services:
     volumes:
       - devcomanda_certbot_certs:/etc/letsencrypt
       - test1_devcomanda_com_certbot:/var/www/certbot/erdogansahin.net
-      - test2_devcomanda_com_certbot:/var/www/certbot/erdogansahin.net
     depends_on:
       - nginx
 
@@ -48,4 +46,3 @@ volumes:
   devcomanda_certbot_certs:
     external: true
   test1_devcomanda_com_certbot:
-  test2_devcomanda_com_certbot:
