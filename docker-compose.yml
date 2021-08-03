@@ -11,7 +11,6 @@ services:
       - devcomanda_certbot_certs:/etc/letsencrypt
       - test1_devcomanda_com_certbot:/var/www/certbot/erdogansahin.net
       - ./html:/var/www/html/erdogansahin.net
-      - ./html:/var/www/html/erdogansahin.net
     ports:
       - "80:80"
       - "443:443"
